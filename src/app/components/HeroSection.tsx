@@ -14,17 +14,6 @@ const Hero = () => (
       textAlign: "center",
     }}
   >
-    {/* <Box sx={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}>
-      <Typography variant="h3" sx={{ fontWeight: "bold" }}>
-        Welcome to Ai-Art Portfolio
-      </Typography>
-      <Typography variant="h5" sx={{ marginBottom: 3 }}>
-        Explore stunning digital art
-      </Typography>
-      <Button variant="contained" color="primary" href="#gallery">
-        View Gallery
-      </Button>
-    </Box> */}
     <Box sx={{ maxWidth: "100%", overflowX: "hidden" }}>
       <Typography
         variant="h5"
@@ -49,6 +38,9 @@ const Hero = () => (
       >
         Product Design Experience
       </Typography>
+      <Button variant="contained" color="primary" href="#gallery">
+        View Gallery
+      </Button>
     </Box>
   </Box>
 );

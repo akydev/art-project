@@ -13,10 +13,10 @@ const theme = createTheme({
   cssVariables: true,
   palette: {
     primary: {
-      main: "#000000",
+      main: "#000000", //Black
     },
     secondary: {
-      main: "#F24405",
+      main: "#F2F2F2", //white
     },
   },
   typography: {

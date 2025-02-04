@@ -96,11 +96,11 @@ const ArtworkGallery = () => (
       </Grid2>
     </Grid2>
 
-    <Grid2>
+    {/* <Grid2>
       <Container>
         <AnimatedCard />
       </Container>
-    </Grid2>
+    </Grid2> */}
   </Box>
 );
 

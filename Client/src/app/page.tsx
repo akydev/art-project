@@ -1,38 +1,13 @@
 "use client";
-import {
-  Box,
-  Button,
-  Container,
-  CssBaseline,
-  Grid2,
-  ThemeProvider,
-  Typography,
-} from "@mui/material";
-import { createTheme } from "@mui/material/styles";
-import Navbar from "./components/Navbar";
-import SocialMediaLinks from "./components/SocialMediaLinks";
+import { Box, Button, Container, Grid2, Typography } from "@mui/material";
 import Hero from "./components/HeroSection";
 import ArtworkGallery from "./components/ArtWorkGallery";
 import ContactForm from "./components/ContactForm";
-import Footerbar from "./components/Footerbar";
 import AnimatedCard from "./components/AnimatedCard";
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#3f51b5",
-    },
-    secondary: {
-      main: "#f50057",
-    },
-  },
-});
 
 export default function Home() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Navbar />
+    <>
       <Hero />
       <ArtworkGallery />
       <section style={{ backgroundColor: "#000000" }}>
@@ -131,12 +106,7 @@ export default function Home() {
           </Box>
         </Container>
       </section>
-      {/* <section style={{ backgroundColor: "#fafafa" }}>
-        <ContactForm />
-      </section> */}
       <ContactForm />
-      <SocialMediaLinks />
-      <Footerbar />
-    </ThemeProvider>
+    </>
   );
 }

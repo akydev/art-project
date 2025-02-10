@@ -40,7 +40,16 @@ const Navbar = () => (
               }}
             />
           </Link>
-          <Typography variant="h6" sx={{ flexGrow: 1 }}>
+          <Typography
+            variant="h6"
+            sx={{
+              // fontFamily: "Poppins",
+              fontFamily: "Roboto",
+              textTransform: "uppercase",
+              flexGrow: 1,
+              fontWeight: "bold",
+            }}
+          >
             Ai-Art
           </Typography>
         </Box>
@@ -49,32 +58,85 @@ const Navbar = () => (
           {" "}
           {/* This creates space between the items */}
           <Link href="/about">
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{
+                fontSize: "14px", // Adjust font size
+                fontWeight: "400", // Make the text bold
+                textTransform: "uppercase", // Prevent uppercase transformation
+                backgroundColor: "#4CAF50", // Custom background color
+                "&:hover": {
+                  backgroundColor: "#45a049", // Hover effect
+                },
+              }}
+            >
               About
             </Button>
           </Link>
           <Link href="/services">
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{
+                fontSize: "14px", // Adjust font size
+                fontWeight: "400", // Make the text bold
+                textTransform: "uppercase", // Prevent uppercase transformation
+              }}
+            >
               services
             </Button>
           </Link>
           <Link href="/gallery">
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{
+                fontSize: "14px", // Adjust font size
+                fontWeight: "400", // Make the text bold
+                textTransform: "uppercase", // Prevent uppercase transformation
+              }}
+            >
               gallery
             </Button>
           </Link>
           <Link href="/contact">
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{
+                fontSize: "14px", // Adjust font size
+                fontWeight: "400", // Make the text bold
+                textTransform: "uppercase", // Prevent uppercase transformation
+              }}
+            >
               contact
             </Button>
           </Link>
           <Link href="/signin">
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{
+                fontSize: "14px", // Adjust font size
+                fontWeight: "400", // Make the text bold
+                textTransform: "uppercase", // Prevent uppercase transformation
+              }}
+            >
               sign-in
             </Button>
           </Link>
           <Link href="/signup">
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{
+                fontSize: "14px", // Adjust font size
+                fontWeight: "400", // Make the text bold
+                textTransform: "uppercase", // Prevent uppercase transformation
+                // letterSpacing: "4px",
+              }}
+            >
               sign-up
             </Button>
           </Link>

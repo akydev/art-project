@@ -8,6 +8,10 @@ import "./globals.css";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme";
 import { usePathname } from "next/navigation";
+import { CssBaseline } from "@mui/material";
+import Navbar from "./components/Navbar";
+import Footerbar from "./components/Footerbar";
+import SocialMediaLinks from "./components/SocialMediaLinks";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,9 +46,25 @@ export default function RootLayout({
       <head>
         <title>{generateTitle(pathname)}</title>
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable}`}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh", // This ensures the body fills the entire height of the viewport
+        }}
+      >
         <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>{children}</ThemeProvider>
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <Navbar />
+            <main style={{ flex: 1 }}>
+              {/* This allows the content to grow and take up available space */}
+              {children}
+            </main>
+            <SocialMediaLinks />
+            <Footerbar />
+          </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>

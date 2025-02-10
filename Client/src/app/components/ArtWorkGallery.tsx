@@ -5,7 +5,6 @@ import {
   Typography,
   Box,
   Grid2,
-  Container,
 } from "@mui/material";
 import AnimatedCard from "./AnimatedCard";
 
